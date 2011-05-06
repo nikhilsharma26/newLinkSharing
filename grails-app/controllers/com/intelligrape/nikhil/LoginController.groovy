@@ -9,8 +9,7 @@ class LoginController {
     def userService
     def facebookService
 
-    static String facebookCallbackUrl = "${ConfigurationHolder.config.grails.serverURL}/login/authenticateApp"
-//    static final String accessTokenUrl = "${ConfigurationHolder.config.grails.serverURL}/login/processClientToken"
+    String facebookCallbackUrl = "${ConfigurationHolder.config.grails.serverURL}/login/authenticateApp"
 
     def index = {
         redirect(action: loginPage)
@@ -33,7 +32,7 @@ class LoginController {
         println "### call back url is ${ConfigurationHolder.config.grails.serverURL}/login/authenticateApp"
         println "### from face book login action"
         println "### request.getHeader('REFERER') is ${request.getHeader('REFERER')}"
-        facebookCallbackUrl += "?optionToShow=${optionToShow.encodeAsURL()}"
+        facebookCallbackUrl += "?optionToShow=${optionToShow?.encodeAsURL()}"
         println "########### facebook call back url is ${facebookCallbackUrl}"
         session.putValue('redirectUrl', request.getHeader('REFERER'))
         String facebookAuthorizeUrl = "https://www.facebook.com/dialog/oauth?client_id=${ConfigurationHolder.config.facebook.appId}&redirect_uri=${facebookCallbackUrl}"
@@ -48,13 +47,13 @@ class LoginController {
         String optionToShow = params.optionToShow
         println "????????? params.optionToShow ${params.optionToShow}"
         println "### The code is ${authCode}"
+        facebookCallbackUrl += "?optionToShow=${optionToShow?.encodeAsURL()}"
         println "<<<<<<<<<<<<<<<<<<<<<<<<facebook call back url is ${facebookCallbackUrl} "
         String appAuthentication = "https://graph.facebook.com/oauth/access_token?client_id=${ConfigurationHolder.config.facebook.apiKey}&redirect_uri=${facebookCallbackUrl}&client_secret=${ConfigurationHolder.config.facebook.apiSecretKey}&code=${authCode}"
         URL url = new URL(appAuthentication)
         String responseToken = url.text
         println "### the responseToken is ${responseToken}"
         redirect(action: "decideWhereToGo", params: ["responseToken": responseToken, "optionToShow": optionToShow])
-//        redirect(action: processClientToken, params:["responseToken":responseToken] )
     }
 
     def decideWhereToGo = {

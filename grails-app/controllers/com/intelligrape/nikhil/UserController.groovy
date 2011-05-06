@@ -5,6 +5,7 @@ import com.intelligrape.nikhil.util.Constants
 class UserController {
 
     def userService
+    def facebookService
 
     def index = {
         redirect(action: 'userPage')
@@ -33,7 +34,8 @@ class UserController {
     def showFriends = {
         String accessToken = params.accessToken
         String userId = session[Constants.LOGIN_USER_ID]
-        def friends = userService.getFriends(accessToken, userId)
-        render "I got You , ${friends}"
+//        def friends = facebookService.getFriends(accessToken, userId)
+        facebookService.getFriends(accessToken, userId)
+        render "I got You , "
     }
 }

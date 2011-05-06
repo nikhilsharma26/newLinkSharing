@@ -3,7 +3,6 @@ package com.intelligrape.nikhil
 import org.codehaus.groovy.grails.web.json.JSONElement
 import grails.converters.JSON
 import com.intelligrape.nikhil.util.FacebookUser
-import com.intelligrape.nikhil.util.Constants
 
 class FacebookService {
 
@@ -26,12 +25,20 @@ class FacebookService {
         return faceBookUser
     }
 
-    FacebookUser[] getFriends() {
-        String id = session[Constants.LOGIN_USER_ID]
+//    FacebookUser[] getFriends(String accessToken, String userId) {
+     void getFriends(String accessToken, String userId) {
+        String id = userId
         User user = User.findById(id)
-        User.generateAToken()
-        String fbUrl = "${USER_BASIC_CONNECTION}friends?access_token="
-        getResponseFromUrl()
+        String fbUrl = "${USER_BASIC_CONNECTION}friends?access_token=${accessToken}"
+        URL url = new URL(fbUrl)
+        String jsonResponse
+        jsonResponse = getResponseFromUrl(url)
+        if (jsonResponse) {
+            JSONElement userJson = JSON.parse(jsonResponse)
+            userJson.data.each {
+                println "it---->${it}"
+            }
+        }
     }
 
     String getResponseFromUrl(URL url) {

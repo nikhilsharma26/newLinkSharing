@@ -84,19 +84,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="134" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.47397768">
+            <state line="41" column="25" selection-start="1735" selection-end="1735" vertical-scroll-proportion="-0.65217394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="645" selection-end="645" vertical-scroll-proportion="-14.173913">
+            <state line="36" column="10" selection-start="964" selection-end="964" vertical-scroll-proportion="0.8366606">
               <folding />
             </state>
           </provider>
@@ -114,7 +114,7 @@
       <file leaf-file-name="FacebookService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="51" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.0">
+            <state line="14" column="32" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,7 +162,7 @@
       <file leaf-file-name="UserService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/UserService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+            <state line="26" column="4" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,11 +197,11 @@
         <option value="$PROJECT_DIR$/src/groovy/com/intelligrape/nikhil/util/FacebookUser.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/userPage.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/UserService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/UserService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy" />
       </list>
     </option>
   </component>
@@ -660,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/com/intelligrape/nikhil/util/FacebookUser.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="-8.181818">
@@ -684,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="51" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/userPage.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.1914895">
@@ -698,23 +684,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="1735" selection-end="1735" vertical-scroll-proportion="-0.65217394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/intelligrape/nikhil/util/FacebookUser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/UserService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+        <state line="26" column="4" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="31" selection-start="645" selection-end="645" vertical-scroll-proportion="-14.173913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="134" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.47397768">
+        <state line="36" column="10" selection-start="964" selection-end="964" vertical-scroll-proportion="0.8366606">
           <folding />
         </state>
       </provider>

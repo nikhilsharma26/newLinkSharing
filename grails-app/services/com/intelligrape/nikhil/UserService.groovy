@@ -25,8 +25,4 @@ class UserService {
         User.findById(userId)
     }
 
-    def getFriends(String accessToken, String userId) {
-        log.error("### in get friends")
-        return "Roni,Puneet,Divya,Shweta,Kushal"
-    }
 }
