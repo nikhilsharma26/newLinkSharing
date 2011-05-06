@@ -70,4 +70,9 @@ class LoginController {
 //            render(view:'/user/userPage')
         }
     }
+
+    def logOut = {
+        session.removeAttribute(Constants.LOGIN_USER_ID)
+        redirect(url:request.getHeader('REFERER'))
+    }
 }

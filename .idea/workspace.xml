@@ -17,7 +17,10 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d9f417-5bdf-40ec-a5a8-791d05d5d4ca" name="Default" comment="" />
+    <list default="true" id="46d9f417-5bdf-40ec-a5a8-791d05d5d4ca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" afterPath="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" />
+    </list>
     <ignored path="LS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -79,7 +82,7 @@
       <file leaf-file-name="LoginController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="84" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.4163569">
+            <state line="75" column="53" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.88847584">
               <folding />
             </state>
           </provider>
@@ -163,7 +166,7 @@
       <file leaf-file-name="loginPage.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/login/loginPage.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="770" selection-end="770" vertical-scroll-proportion="-5.744681">
+            <state line="13" column="39" selection-start="626" selection-end="626" vertical-scroll-proportion="-4.1489363">
               <folding />
             </state>
           </provider>
@@ -567,7 +570,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="718" extended-state="1" />
+    <frame x="0" y="25" width="1366" height="718" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -683,13 +686,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/login/loginPage.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="770" selection-end="770" vertical-scroll-proportion="-5.744681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/userPage.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="52" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.5531914">
@@ -704,9 +700,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/login/loginPage.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="39" selection-start="626" selection-end="626" vertical-scroll-proportion="-4.1489363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="84" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.4163569">
+        <state line="75" column="53" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.88847584">
           <folding />
         </state>
       </provider>

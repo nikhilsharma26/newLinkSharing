@@ -10,7 +10,8 @@
 
 <div class="login-box">
     <g:if test="${user}">
-        WELCOME ${user.name}
+        <span>WELCOME ${user.name}</span>
+        <span><g:link controller="login" action="logOut">Log-Out</g:link></span>
     </g:if>
     <g:else>
         <a href="${createLink(controller: 'login', action: 'faceBookLogin')}">
