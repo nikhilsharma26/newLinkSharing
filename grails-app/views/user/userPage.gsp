@@ -6,7 +6,7 @@
   <body>
     <div>
         <ul>
-            <li><g:link controller="user" action="showFriends"> FRIENDS </g:link></li>
+            <li><g:link controller="user" action="requestFriends" params="[select:'friends']"> FRIENDS </g:link></li>
             <li>MY LIKES</li>
         </ul>
     </div>

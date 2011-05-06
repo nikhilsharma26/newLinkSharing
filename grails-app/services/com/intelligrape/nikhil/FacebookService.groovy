@@ -50,4 +50,14 @@ class FacebookService {
         }
         return response;
     }
+
+    String getAccessToken(String responseToken) {
+        String accessToken = ""
+        if (responseToken.contains("access_token")) {
+            println ""
+            String[] clientToken = responseToken.split('access_token=')
+            accessToken = clientToken[1].split("&expires=")[0]
+        }
+        return accessToken
+    }
 }

@@ -1,7 +1,5 @@
 package com.intelligrape.nikhil
-
 import com.intelligrape.nikhil.util.FacebookUser
-import com.intelligrape.nikhil.util.Constants
 
 class UserService {
 
@@ -27,4 +25,8 @@ class UserService {
         User.findById(userId)
     }
 
+    def getFriends(String accessToken, String userId) {
+        log.error("### in get friends")
+        return "Roni,Puneet,Divya,Shweta,Kushal"
+    }
 }
