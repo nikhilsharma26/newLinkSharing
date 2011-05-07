@@ -17,11 +17,9 @@ class User {
         birthday(nullable: true)
     }
 
+    static hasMany = [friends:UserFriend]
+
     void showUserPicture() {
-
-    }
-
-    static String generateAToken() {
 
     }
 }

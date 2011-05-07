@@ -3,6 +3,7 @@ package com.intelligrape.nikhil
 import org.codehaus.groovy.grails.web.json.JSONElement
 import grails.converters.JSON
 import com.intelligrape.nikhil.util.FacebookUser
+import com.intelligrape.nikhil.appUtils.CO.UserCO
 
 class FacebookService {
 
@@ -35,8 +36,11 @@ class FacebookService {
         jsonResponse = getResponseFromUrl(url)
         if (jsonResponse) {
             JSONElement userJson = JSON.parse(jsonResponse)
-            userJson.data.each {
-                println "it---->${it}"
+            userJson.data.each {userData->
+                UserCO userCO = new UserCO(facebookId: userData.id ,name: userData.name)
+                userCO.save()
+                // todo make a CO and show it , can also store it
+                println "it---->${userData}"
             }
         }
     }
