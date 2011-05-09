@@ -1,7 +1,7 @@
 package com.intelligrape.nikhil
 
 class User {
-    String id
+//    String userId
     String facebookAccessToken
     String name
     String currentLocation

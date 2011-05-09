@@ -56,6 +56,7 @@ environments {
     }
     development {
         grails.serverURL = "http://localhost:8080/${appName}"
+        grails.projectName = "PROJECT NAME"
         facebook {
             appId = "194116870625527"
             apiKey = "2c7e2365bb4ae22ccf328bb25ec727be"

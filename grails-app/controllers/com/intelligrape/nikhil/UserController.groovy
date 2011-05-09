@@ -33,9 +33,12 @@ class UserController {
 
     def showFriends = {
         String accessToken = params.accessToken
-        String userId = session[Constants.LOGIN_USER_ID]
+//        String userId = session[Constants.LOGIN_USER_ID]
+        long currentUserId = (long)session[Constants.LOGIN_USER_ID]
 //        def friends = facebookService.getFriends(accessToken, userId)
-        facebookService.getFriends(accessToken, userId)
+//        facebookService.getFriends(accessToken, userId)
+        println "!!!!!!!!!!! in session , we have ${session[Constants.LOGIN_USER_ID]}"
+        facebookService.getFriends(accessToken, currentUserId)
         render "I got You , "
     }
 }

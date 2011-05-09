@@ -15,13 +15,14 @@
     </g:if>
     <g:else>
         <a href="${createLink(controller: 'login', action: 'faceBookLogin')}">
-            <fb:login-button>login via facebook</fb:login-button>
-        </a>
+            %{--<fb:login-button>login via facebook</fb:login-button>--}%
+            <img src=${resource(dir: 'images', file: 'facebook-logo.jpg')} />
+        </a>login via facebook
     </g:else>
 </div>
 
 <div>
-    <g:link controller="user" action="userPage"> TO MY PAGE </g:link>
+    <g:link controller="user" action="userPage">TO MY PAGE</g:link>
 </div>
 
 <div id="fb-root"></div>

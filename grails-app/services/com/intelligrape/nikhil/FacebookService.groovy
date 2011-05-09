@@ -4,6 +4,7 @@ import org.codehaus.groovy.grails.web.json.JSONElement
 import grails.converters.JSON
 import com.intelligrape.nikhil.util.FacebookUser
 import com.intelligrape.nikhil.appUtils.CO.UserCO
+import com.intelligrape.nikhil.util.Constants
 
 class FacebookService {
 
@@ -11,9 +12,12 @@ class FacebookService {
     private static final String GRAPH_BASIC_URL = "https://graph.facebook.com/"
     private static final String USER_BASIC_CONNECTION = "https://graph.facebook.com/me/"
 
-    FacebookUser getProfile(String accessToken, String userId = 'me') {
-        log.debug("Getting facebook profile for user ${userId}")
-        String fbUrl = "${GRAPH_BASIC_URL + userId}?access_token=${accessToken}"
+//    FacebookUser getProfile(String accessToken, String userId = 'me') {
+    FacebookUser getProfile(String accessToken, String facebookId = 'me') {
+//        log.debug("Getting facebook profile for user ${userId}")
+        log.debug("Getting facebook profile for user ${facebookId}")
+//        String fbUrl = "${GRAPH_BASIC_URL + userId}?access_token=${accessToken}"
+        String fbUrl = "${GRAPH_BASIC_URL + facebookId}?access_token=${accessToken}"
         URL url = new URL(fbUrl)
         String jsonResponse
         FacebookUser faceBookUser = null
@@ -21,15 +25,19 @@ class FacebookService {
         if (jsonResponse) {
             JSONElement userJson = JSON.parse(jsonResponse)
             faceBookUser = new FacebookUser(userJson)
-            faceBookUser.profilePictureUrl = "http://graph.facebook.com/${faceBookUser.id}/picture?type=large"
+//            faceBookUser.profilePictureUrl = "http://graph.facebook.com/${faceBookUser.userId}/picture?type=large"
+            faceBookUser.profilePictureUrl = "http://graph.facebook.com/${faceBookUser.facebookId}/picture?type=large"
         }
         return faceBookUser
     }
 
 //    FacebookUser[] getFriends(String accessToken, String userId) {
-     void getFriends(String accessToken, String userId) {
-        String id = userId
-        User user = User.findById(id)
+//     void getFriends(String accessToken, String userId) {
+     void getFriends(String accessToken, long currentUserId) {
+//        String id = userId
+//        String id = currentUserId
+//        User user = User.findByUserId(userId)
+        User user = User.findById(currentUserId)
         String fbUrl = "${USER_BASIC_CONNECTION}friends?access_token=${accessToken}"
         URL url = new URL(fbUrl)
         String jsonResponse
@@ -38,7 +46,8 @@ class FacebookService {
             JSONElement userJson = JSON.parse(jsonResponse)
             userJson.data.each {userData->
                 UserCO userCO = new UserCO(facebookId: userData.id ,name: userData.name)
-                userCO.save()
+                println("@@@@@ the user is ${user.name}")
+                userCO.saveUserFromCO(user)
                 // todo make a CO and show it , can also store it
                 println "it---->${userData}"
             }

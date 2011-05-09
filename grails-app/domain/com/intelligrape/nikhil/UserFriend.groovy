@@ -7,7 +7,5 @@ class UserFriend {
     static constraints = {
     }
 
-    static belongsTo = {
-        user: User
-    }
+    static belongsTo = [user: User]
 }

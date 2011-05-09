@@ -1,0 +1,85 @@
+#container {
+    margin: auto;
+    width: 720px;
+    border: 1px solid red;
+}
+
+#header {
+    width: 720px;
+    height: 100px;
+    border-bottom: 2px solid #000000;
+    background-image: url("/images/220px-Chennai_street_children.jpg");
+    position: relative;
+}
+
+#header .horizontalLinks {
+    position: absolute;
+    left: 180px;
+    top: 77px;
+}
+
+.horizontalLinks ul {
+    margin: 0;
+    border:1px solid #ffd700;
+}
+
+.horizontalLinks li {
+    border:1px solid blue;
+    margin: 0 10px 0 0;
+    list-style-type: none;
+    display: inline;
+}
+
+#horizontalnav {
+    border: 1px solid aqua;
+    height:20px;
+    position: relative;
+}
+
+.navlinks {
+    position:absolute;
+    left: 168px;
+    top: 2px;
+}
+
+.navlinks ul {
+    margin:0;
+    border:1px solid #daa520;
+}
+
+.navlinks li {
+    list-style-type:none;
+    display:inline;
+}
+
+#leftnav {
+    float: left;
+    width: 100px;
+    height: 500px;
+    background-color: #f8aa3c;
+    border-right: 1px dashed #694717;
+}
+
+#rightnav {
+    float: right;
+    width: 100px;
+    height: 500px;
+    background-color: #f8aa3c;
+    border-left: 1px dashed #694717;
+
+}
+
+#footer {
+    border: 1px solid gray;
+    clear: both;
+    height: 30px;
+    width: 720px;
+}
+
+#body {
+
+}
+
+
+
+

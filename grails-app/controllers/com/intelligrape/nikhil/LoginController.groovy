@@ -21,7 +21,7 @@ class LoginController {
         if (session[Constants.LOGIN_USER_ID]) {
             log.error("### in if using log")
             println("### in if using println")
-            user = userService.getUser((String) session[Constants.LOGIN_USER_ID])
+            user = userService.getUser((long)session[Constants.LOGIN_USER_ID])
         }
         render(view: "loginPage", model: [user: user])
     }
@@ -75,6 +75,7 @@ class LoginController {
     def processClientToken = {
         User user = userService.createOrGetUserForAccessToken(params.accessToken)
         user.save(flush: true)
+        println "##### user id is ${user.id}"
         session[Constants.LOGIN_USER_ID] = user.id
         println "value in session is ${session[Constants.LOGIN_USER_ID]}"
         redirect(url: session.redirectUrl)

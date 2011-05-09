@@ -3,7 +3,7 @@ package com.intelligrape.nikhil.util
 import org.codehaus.groovy.grails.web.json.JSONElement
 
 class FacebookUser {
-    String id
+    String facebookId
     String name
     String first_name
     String last_name
@@ -18,7 +18,7 @@ class FacebookUser {
 
     FacebookUser(JSONElement user )
     {
-        id = user.id
+        facebookId = user.id
         name = user.name
         first_name = user.first_name
         last_name = user.last_name
