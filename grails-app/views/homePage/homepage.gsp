@@ -39,9 +39,9 @@
     <div id="rightnav">THIS IS THE RIGHT NAV</div>
     <div id="body"><h1>flash formsubmit is ${flash.formSubmit}</h1>
         <div id="thank-you">
-            %{--<g:if test="${flash.formSubmit == 'success'}">--}%
+            <g:if test="${flash.formSubmit == 'success'}">
             <span>THANK YOU FOR SUBMITTING FORM</span>
-            %{--</g:if>--}%
+            </g:if>
         </div>
         <p>Please click on some stats below.</p>
     </div>
@@ -49,12 +49,12 @@
 </div>
 
 <div id="form-id">
-    <g:form url="[action:'handleForm', controller: 'childContact']" name="form" enctype="multipart/form-data">
+    <g:form id="form" url="[action:'handleForm', controller: 'childContact']" name="form" enctype="multipart/form-data">
         <div id="table">
-            <div id="row1"><span>Name</span><g:textField name="name" class="required"/></div>
+            <div id="row1"><span>Name</span><g:textField name="name" /></div>
             <div id="row2"><span>Location</span><g:select from="${['NORTHDELHI','EASTDELHI','CENTRALDELHI','SOUTHDELHI','WESTDELHI']}" name="location"/></div>
             <div id="row3" style="border:1px solid red;"><div id="row3container"><span style="border: 1px solid green; display:inline-block; vertical-align:middle; ">Description</span></div><g:textArea name="description" rows="5" cols="30"/></div>
-            <div id="row4">Browse<input type="file" name="image" class="required" /> </div>
+            <div id="row4">Browse<input type="file" name="image" class="required"/></div>
             <div id="row5"><span>Upload</span>
                 <div class="modalCloseImg">
                     <g:submitButton name="submit" value="Upload"/>
@@ -68,6 +68,7 @@
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
+        jQuery("#form").validate();
         jQuery("#form-id").hide();
         if (${flash.formSubmit == 'success'}) {
             jQuery("#thank-you").modal({onOpen: function (dialog) {
