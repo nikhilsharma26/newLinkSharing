@@ -49,15 +49,15 @@
 </div>
 
 <div id="form-id">
-    <g:form url="[action:'handleForm', controller: 'homePage']" name="form" enctype="multipart/form-data">
+    <g:form url="[action:'handleForm', controller: 'childContact']" name="form" enctype="multipart/form-data">
         <div id="table">
             <div id="row1"><span>Name</span><g:textField name="name" class="required"/></div>
             <div id="row2"><span>Location</span><g:select from="${['NORTHDELHI','EASTDELHI','CENTRALDELHI','SOUTHDELHI','WESTDELHI']}" name="location"/></div>
             <div id="row3" style="border:1px solid red;"><div id="row3container"><span style="border: 1px solid green; display:inline-block; vertical-align:middle; ">Description</span></div><g:textArea name="description" rows="5" cols="30"/></div>
-            <div id="row4"></div>
+            <div id="row4">Browse<input type="file" name="image" class="required" /> </div>
             <div id="row5"><span>Upload</span>
                 <div class="modalCloseImg">
-                    <g:submitButton name="submit" value="Upload" onkeydown="formSubmitted();"/>
+                    <g:submitButton name="submit" value="Upload"/>
                 </div>
             </div>
             <div class="modalCloseImg"></div>

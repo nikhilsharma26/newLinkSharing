@@ -11,10 +11,4 @@ class HomePageController {
         String formSubmit = params.formSubmited ?: "notSubmit"
         render(view: 'homepage')
     }
-
-    def handleForm = {
-        println("### from handle form")
-        flash.formSubmit = 'success'
-        redirect(action: "homepage")
-    }
 }
