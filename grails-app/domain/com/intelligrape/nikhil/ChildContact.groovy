@@ -6,6 +6,7 @@ class ChildContact {
     String name
     String location
     String description
+//    String type
 
     static constraints = {
         name(nullable: true)

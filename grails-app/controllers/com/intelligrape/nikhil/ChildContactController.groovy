@@ -1,6 +1,8 @@
 package com.intelligrape.nikhil
 
 import com.intelligrape.nikhil.util.Constants
+import javax.activation.MimetypesFileTypeMap
+import org.springframework.web.multipart.commons.CommonsMultipartFile
 
 class ChildContactController {
 
@@ -15,7 +17,11 @@ class ChildContactController {
     def handleForm = {
         println("### from handle form params are-------> ${params}")
         ChildContact childContact = new ChildContact(params)
+
         println "-----------------------"
+//        CommonsMultipartFile commonsMultipartFile = childContact.image
+//        println "----------> file ${commonsMultipartFile}"
+//        String fileType = new MimetypesFileTypeMap().getContentType(params.file)
         long userId = (long)session[Constants.LOGIN_USER_ID]
         User user = User.get(userId)
         println "%%%%%%%%% user is ${user?.name}"

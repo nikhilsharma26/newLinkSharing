@@ -27,9 +27,9 @@
     <div id="horizontalnav">
         <div class="navlinks">
             <ul>
-                <li><a href="#">NAV link1</a></li>
+                <li><a href="#">Subscribe to mail</a></li>
                 <li><a href="#" onclick="fillForm();">FILL FORM</a></li>
-                <li><a href="#">NAV link3</a></li>
+                <li><a href="${createLink(controller:"user" , action:"discussionBoard")}" >My Board</a></li>
                 <li><a href="#">NAV link4</a></li>
             </ul>
         </div>

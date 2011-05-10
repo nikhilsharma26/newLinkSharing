@@ -41,4 +41,11 @@ class UserController {
         facebookService.getFriends(accessToken, currentUserId)
         render "I got You , "
     }
+
+    def discussionBoard = {
+        long userId = (long)session[Constants.LOGIN_USER_ID]
+        println "userId ${userId}"
+        User user = User.findById(userId)
+        render(view:'discussionBoard' , model:[user:user])
+    }
 }
