@@ -19,6 +19,7 @@
             <img src=${resource(dir: 'images', file: 'facebook-logo.jpg')} />
         </a>login via facebook
     </g:else>
+    <div><h4><a href="${createLink(controller:'homePage',action:'homepage')}" >home-page </a></h4></div>
 </div>
 
 <div>

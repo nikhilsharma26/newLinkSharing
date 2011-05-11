@@ -34,7 +34,7 @@ class UserController {
     def showFriends = {
         String accessToken = params.accessToken
 //        String userId = session[Constants.LOGIN_USER_ID]
-        long currentUserId = (long)session[Constants.LOGIN_USER_ID]
+        long currentUserId = (long) session[Constants.LOGIN_USER_ID]
 //        def friends = facebookService.getFriends(accessToken, userId)
 //        facebookService.getFriends(accessToken, userId)
         println "!!!!!!!!!!! in session , we have ${session[Constants.LOGIN_USER_ID]}"
@@ -43,9 +43,26 @@ class UserController {
     }
 
     def discussionBoard = {
-        long userId = (long)session[Constants.LOGIN_USER_ID]
+        String userFacebookId = params.userFacebookId
+        User user = User.findByFacebookId(userFacebookId)
+        render(view: 'myBoard', model: [user: user])
+    }
+
+    def myBoard = {
+        long userId = (long) session[Constants.LOGIN_USER_ID]
         println "userId ${userId}"
         User user = User.findById(userId)
-        render(view:'discussionBoard' , model:[user:user])
+        render(view: 'myBoard', model: [user: user])
+    }
+
+    def discuss = {
+        String imageId = params.imageId
+        render(view: 'discuss', model: [imageId: imageId])
+    }
+
+    def allUsers = {
+        List<User> userList = User.list()
+        println "userList is ${userList}"
+        render(view: "allUsers", model: [userList: userList])
     }
 }

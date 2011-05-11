@@ -29,8 +29,8 @@
             <ul>
                 <li><a href="#">Subscribe to mail</a></li>
                 <li><a href="#" onclick="fillForm();">FILL FORM</a></li>
-                <li><a href="${createLink(controller:"user" , action:"discussionBoard")}" >My Board</a></li>
-                <li><a href="#">NAV link4</a></li>
+                <li><a href="${createLink(controller:"user" , action: "myBoard")}" >My Board</a></li>
+                <li><a href="${createLink(controller:"user" , action: "allUsers")}">All Users</a></li>
             </ul>
         </div>
     </div>
