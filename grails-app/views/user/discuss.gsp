@@ -3,13 +3,14 @@
 <head>
     <title>Discuss</title>
     <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"> </script>
-    <meta property="og:title" content="Picture"/>
-    <meta property="og:type" content="Picture"/>
-    <meta property="og:image" content="${ConfigurationHolder.config.grails.serverURL}/web-app/images/220px-Chennai_street_children.jpg" />
-    <meta property="og:url" content="${ConfigurationHolder.config.grails.serverURL}/user/discuss" />
-    <meta property="og:site_name" content="TEST" />
-    <meta property="og:description" content="Just a Test" />
-    <meta property="og:admins" content="100001378023600" />
+    <meta property="og:title" content="Picture">
+    <meta property="og:type" content="Picture">
+    <meta property="og:image" content="${ConfigurationHolder.config.grails.serverURL}/web-app/images/220px-Chennai_street_children.jpg" >
+    <meta property="og:url" content="${ConfigurationHolder.config.grails.serverURL}/user/discuss" >
+    <meta property="og:site_name" content="TEST" >
+    <meta property="og:description" content="Just a Test" >
+    <meta property="fb:app_id" content="194116870625527">
+    %{--<meta property="og:admins" content="100001378023600" />--}%
 </head>
 <body>
 <h1>WE SHOULD DISCUSS THIS</h1>
