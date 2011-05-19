@@ -17,8 +17,10 @@ class User {
         birthday(nullable: true)
     }
 
-    static hasMany = [friends:UserFriend,
-                      childContacts:ChildContact]
+    static hasMany = [friends: UserFriend,
+            childContacts: ChildContact,
+            thisOrThatTopic: ThisOrThatTopic,
+            ratings: UserRating]
 
     void showUserPicture() {
 

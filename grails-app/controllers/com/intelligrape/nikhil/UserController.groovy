@@ -65,4 +65,37 @@ class UserController {
         println "userList is ${userList}"
         render(view: "allUsers", model: [userList: userList])
     }
+
+    def thisOrThat = {
+
+    }
+
+    def getUserPicturesFromFacebook = {
+
+
+    }
+
+    def thisOrThatBoard = {
+        ThisOrThatTopic thisOrThatTopic = ThisOrThatTopic.findById(params.currentTopicId)
+        render(view: 'thisOrThat', model: [thisOrThatTopic: thisOrThatTopic])
+    }
+
+    def thisOrThatForms = {
+        List<User> userList = User.findAll()
+        println "userlist ------>${userList}"
+        render(view: 'thisOrThatForms', model: [userList: userList])
+    }
+
+    def discussionBoardThisOrThat = {
+        User user = User.findByFacebookId(params.userFacebookId)
+        render(view: 'myThisOrThatBoard', model: [user: user])
+    }
+
+    def userThisThatBoard = {
+        User user = User.findByFacebookId(params.userFacebookId)
+        println "### user is ${user.name}"
+        List<ThisOrThatTopic> thisOrThatTopicList = ThisOrThatTopic.findAllByUser(user)
+        println "#### user's topics are ${thisOrThatTopicList}"
+        render(view: '/thisOrThat/myThisOrThatBoard', model: [currentUser: user, thisOrThatTopicList: thisOrThatTopicList])
+    }
 }

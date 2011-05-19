@@ -16,10 +16,10 @@
     <g:else>
         <a href="${createLink(controller: 'login', action: 'faceBookLogin')}">
             %{--<fb:login-button>login via facebook</fb:login-button>--}%
-            <img src=${resource(dir: 'images', file: 'facebook-logo.jpg')} />
+            <img src= ${resource(dir: 'images', file: 'facebook-logo.jpg')} />
         </a>login via facebook
     </g:else>
-    <div><h4><a href="${createLink(controller:'homePage',action:'homepage')}" >home-page </a></h4></div>
+    <div><h4><a href="${createLink(controller: 'homePage', action: 'homepage')}">home-page</a></h4></div>
 </div>
 
 <div>
@@ -29,11 +29,12 @@
 <div id="fb-root"></div>
 <script type="text/javascript">
     FB.init({
-        appId  : '${ConfigurationHolder.config.facebook.appId}',
-        status : true, // check login status
-        cookie : true, // enable cookies to allow the server to access the session
-        xfbml  : true  // parse XFBML
+    appId  : '${ConfigurationHolder.config.facebook.appId}',
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml  : true  // parse XFBML
     });
+
 </script>
 </body>
 </html>

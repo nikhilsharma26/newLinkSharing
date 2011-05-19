@@ -19,7 +19,7 @@ ${imageId}
 <div id="fb-root"></div>
     ${ConfigurationHolder.config.grails.serverURL}/user/discuss
     <div id="hide">
-        <fb:comments href="${ConfigurationHolder.config.grails.serverURL}/user/discuss?imageId=${imageId.encodeAsURL()}" num_posts="8" width="500"> </fb:comments>
+        <fb:comments href="${ConfigurationHolder.config.grails.serverURL}/user/discuss?imageId=${imageId.encodeAsURL()}" num_posts="8" width="500" publish_feed="true" > </fb:comments>
     </div>
     <div id="fb-root"></div><fb:like href="${ConfigurationHolder.config.grails.serverURL}/user/discuss?imageId=${imageId.encodeAsURL()}" send="true" width="450" show_faces="true" font=""> </fb:like>
 </body>

@@ -16,8 +16,8 @@
     <div id="header">WELCOME TO HOMEPAGE OF ${ConfigurationHolder.config.grails.projectName} ${formSubmit}
         <div class="horizontalLinks">
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
+                <li><a href="${createLink(controller:'thisOrThat' ,action: 'myThisOrThatBoard')}">MY THIS or that board</a></li>
+                <li><a href="${createLink(controller:'user', action:'thisOrThatForms')}">All this that users</a></li>
                 <li><a href="#">Link 3</a></li>
                 <li><a href="#">Link 4</a></li>
                 <li><a href="#">Link 5</a></li>
@@ -27,7 +27,7 @@
     <div id="horizontalnav">
         <div class="navlinks">
             <ul>
-                <li><a href="#">Subscribe to mail</a></li>
+                <li><a href="#" onclick="thisOrThatForm();">THIS OR THAT FORM FILL</a></li>
                 <li><a href="#" onclick="fillForm();">FILL FORM</a></li>
                 <li><a href="${createLink(controller:"user" , action: "myBoard")}" >My Board</a></li>
                 <li><a href="${createLink(controller:"user" , action: "allUsers")}">All Users</a></li>
@@ -41,6 +41,11 @@
         <div id="thank-you">
             <g:if test="${flash.formSubmit == 'success'}">
             <span>THANK YOU FOR SUBMITTING FORM</span>
+            </g:if>
+        </div>
+        <div id="thank-you-this-or-that">
+            <g:if test="${flash.thisOrThatFormSubmit == 'success'}">
+            <span>THANK YOU FOR SUBMITTING THIS OR THAT FORM</span>
             </g:if>
         </div>
         <p>Please click on some stats below.</p>
@@ -65,6 +70,27 @@
     </g:form>
 </div>
 
+<div id="thisOrThatDivId">
+    <g:form id="thisOrThatFormId" url="[action:'handleThisOrThatForm', controller:'thisOrThat']" enctype="multipart/form-data" >
+        <div>
+            <span>Upload Picture 1 </span> <input type="file" name="picture1" class="required" />
+        </div>
+        <div>
+            <span>Upload Picture 2 </span> <input type="file" name="picture2" class="required" />
+        </div>
+        <div>
+            <span>Give Topic<g:textField name="topic" />  </span>
+        </div>
+        <div>
+            <span>Initial Comments<g:textField name="initialComments" /> </span>
+        </div>
+            <div class="modalCloseImg">
+                <g:submitButton name="submit" value="VOTE" />
+            </div>
+        <div class="modalCloseImg"></div>
+    </g:form>
+</div>
+
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -72,6 +98,16 @@
         jQuery("#form-id").hide();
         if (${flash.formSubmit == 'success'}) {
             jQuery("#thank-you").modal({onOpen: function (dialog) {
+                dialog.overlay.fadeIn('slow', function () {
+                    dialog.data.hide();
+                    dialog.container.fadeIn('slow', function () {
+                        dialog.data.slideDown('slow');
+                    });
+                });
+            }});
+        }
+        if (${flash.thisOrThatFormSubmit == 'success'}) {
+            jQuery("#thank-you-this-or-that").modal({onOpen: function (dialog) {
                 dialog.overlay.fadeIn('slow', function () {
                     dialog.data.hide();
                     dialog.container.fadeIn('slow', function () {
@@ -93,6 +129,19 @@
             });
         }});
     }
+
+    function thisOrThatForm() {
+        alert("hello");
+        jQuery("#thisOrThatDivId").modal({onOpen: function (dialog) {
+            dialog.overlay.fadeIn('slow', function () {
+                dialog.data.hide();
+                dialog.container.fadeIn('slow', function () {
+                    dialog.data.slideDown('slow');
+                });
+            });
+        }});
+    }
+
 </script>
 
 </body>

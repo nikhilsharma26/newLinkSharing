@@ -85,4 +85,8 @@ class LoginController {
         session.removeAttribute(Constants.LOGIN_USER_ID)
         redirect(url: request.getHeader('REFERER'))
     }
+
+    def test = {
+
+    }
 }
