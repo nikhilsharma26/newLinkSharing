@@ -7,7 +7,7 @@
   <body>
   <% thisOrThatTopic = (ThisOrThatTopic)thisOrThatTopic %>
     <h1>This Or That topic ${thisOrThatTopic.topic}</h1>
-    <div id="image-container">
+    <div id="image-container" style="border:2px solid orange;">
         <div id="picture-1">
             <img style="width:450px; height:300px;float:left;" src="${createLink(controller:'image',action:'showImageForThisOrThatTopicPicture1',params:[topicId:thisOrThatTopic.id])}" >
         </div>
@@ -15,6 +15,8 @@
             <img style="width:450px; height:300px;float:right;" src="${createLink(controller:'image',action:'showImageForThisOrThatTopicPicture2',params:[topicId:thisOrThatTopic.id])}" >
         </div>
     </div>
+    <span>${thisOrThatTopic}</span>
+
   <div id="fb-root"></div>
     ${ConfigurationHolder.config.grails.serverURL}/user/thisOrThat
     <div id="hide" style="margin:auto;">

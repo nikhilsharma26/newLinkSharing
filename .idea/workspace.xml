@@ -18,20 +18,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d9f417-5bdf-40ec-a5a8-791d05d5d4ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/thisOrThat/myThisOrThatBoard.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/thisOrThatForms.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ImageController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ImageController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ChildContact.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ChildContact.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ThisOrThatTopic.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ThisOrThatTopic.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp" afterPath="$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" afterPath="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/discuss.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/discuss.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/userPage.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/userPage.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp" />
     </list>
     <ignored path="LS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,92 +80,7 @@
     <favorites_list name="LS" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UserController.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="38" selection-start="3040" selection-end="3040" vertical-scroll-proportion="0.75092936">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thisOrThatForms.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/thisOrThatForms.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="100" selection-start="538" selection-end="552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allUsers.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/allUsers.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="65" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homepage.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="64" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThisOrThatController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ThisOrThatController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="785" selection-end="802" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discuss.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/discuss.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="72" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myThisOrThatBoard.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/thisOrThat/myThisOrThatBoard.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myBoard.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/myBoard.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -189,22 +94,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/login/loginPage.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/login/test.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/userPage.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ChildContact.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ThisOrThatTopic.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/thisOrThat/thisOrThatForm.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ImageController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ThisOrThatController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/discuss.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/myThisOrThatBoard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/thisOrThatForms.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/HomePageController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/Rating.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ThisOrThatTopic.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/User.groovy" />
       </list>
     </option>
   </component>
@@ -240,8 +145,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,25 +263,172 @@
               <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taglib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nikhil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nikhil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLinkSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nikhil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="74" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="90" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1005" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="94" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="89" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
@@ -385,6 +438,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:newLinkSharing">
+    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -396,14 +457,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -427,6 +480,24 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="/usr/bin/flashplayer" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -467,24 +538,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
       <option name="MAIN_CLASS_NAME" />
@@ -502,6 +555,14 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -528,14 +589,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -615,7 +668,7 @@
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24923548" sideWeight="0.33977455" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -701,32 +754,46 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ChildContactController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
+        <state line="6" column="6" selection-start="201" selection-end="201" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/HomePageController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="240" selection-end="240" vertical-scroll-proportion="-6.521739" />
+        <state line="14" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="-9.130435">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ImageController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="756" selection-end="756" vertical-scroll-proportion="-15.0" />
+        <state line="19" column="71" selection-start="553" selection-end="553" vertical-scroll-proportion="-12.391304">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/LoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="174" selection-start="1235" selection-end="1235" vertical-scroll-proportion="-6.382979" />
+        <state line="17" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="-10.434783">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ThisOrThatTopic.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/StatisticsController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.6818182" />
+        <state line="10" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-6.521739">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="-9.782609">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/ChildContact.groovy">
@@ -734,26 +801,17 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="295" selection-end="295" vertical-scroll-proportion="-5.1136365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/UserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="38" selection-start="3040" selection-end="3040" vertical-scroll-proportion="0.75092936">
+        <state line="2" column="6" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.6818182">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/thisOrThatForms.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="100" selection-start="538" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/Rating.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/allUsers.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="65" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
@@ -763,42 +821,62 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+        <state line="16" column="57" selection-start="398" selection-end="398" vertical-scroll-proportion="-5.4545455">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/homePage/homepage.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/UserFriend.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="64" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/intelligrape/nikhil/ThisOrThatController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/intelligrape/nikhil/UserRating.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="785" selection-end="802" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/discuss.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/FacebookService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="72" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+        <state line="23" column="72" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/ImageService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/intelligrape/nikhil/UserService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="94" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/thisOrThat/myThisOrThatBoard.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="13" column="25" selection-start="418" selection-end="418" vertical-scroll-proportion="-4.1489363">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/myBoard.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/thisOrThat.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
+        <state line="25" column="33" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.7035647">
           <folding />
         </state>
       </provider>

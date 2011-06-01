@@ -20,7 +20,8 @@ class User {
     static hasMany = [friends: UserFriend,
             childContacts: ChildContact,
             thisOrThatTopic: ThisOrThatTopic,
-            ratings: UserRating]
+            ratings: UserRating,
+            pictureRating: Rating]
 
     void showUserPicture() {
 
