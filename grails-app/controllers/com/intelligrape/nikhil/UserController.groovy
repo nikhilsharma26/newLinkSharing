@@ -77,7 +77,7 @@ class UserController {
 
     def thisOrThatBoard = {
         ThisOrThatTopic thisOrThatTopic = ThisOrThatTopic.findById(params.currentTopicId)
-        render(view: 'thisOrThat', model: [thisOrThatTopic: thisOrThatTopic])
+        render(view: 'thisOrThat', model: [thisOrThatTopic: thisOrThatTopic, picture1Votes: thisOrThatTopic.picture1Votes, picture2Votes: thisOrThatTopic.picture2Votes])
     }
 
     def thisOrThatForms = {

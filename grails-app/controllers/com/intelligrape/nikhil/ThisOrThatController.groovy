@@ -1,4 +1,5 @@
 package com.intelligrape.nikhil
+
 import com.intelligrape.nikhil.util.Constants
 
 class ThisOrThatController {
@@ -31,6 +32,19 @@ class ThisOrThatController {
     }
 
     def vote = {
-        render "hello"
+        println "hello"
+        long id = (long) params.id
+        ThisOrThatTopic thisOrThatTopic = ThisOrThatTopic.get(id)
+        int value = -1
+        if (params.pic == "pic1") {
+            value = thisOrThatTopic.picture1Votes + 1
+            thisOrThatTopic.picture1Votes = thisOrThatTopic.picture1Votes + 1
+        }
+        else {
+            value = thisOrThatTopic.picture2Votes + 1
+            thisOrThatTopic.picture2Votes = thisOrThatTopic.picture2Votes + 1
+        }
+        thisOrThatTopic.save(flush: true)
+        render "${value}"
     }
 }

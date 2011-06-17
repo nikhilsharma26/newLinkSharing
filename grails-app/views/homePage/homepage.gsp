@@ -88,7 +88,7 @@
       <span>Write Picture 2 Topic</span> <g:textField name="picture2Topic" class="required"/>
     </div>
     <div>
-      <span>Write Picture 2 Description</span> <g:textArea name="picture1Description" rows="5" cols="20"/>
+      <span>Write Picture 2 Description</span> <g:textArea name="picture2Description" rows="5" cols="20"/>
     </div>
     <div>
       <span>Give Competition Name<g:textField name="topic"/></span>

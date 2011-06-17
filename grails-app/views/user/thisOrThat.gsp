@@ -28,10 +28,12 @@
     <tr>
         <td colspan="2" align="center">
             <img width=200 src="${createLink(controller: 'image', action: 'showImageForThisOrThatTopicPicture1', params: [topicId: thisOrThatTopic.id])}">
+            <span id="pic1Votes">${picture1Votes} votes</span>
         </td>
         <td colspan="2" align="center"><img style="width:100px" src="${resource(dir: 'images', file: 'VSlogo.jpg')}"/></td>
         <td colspan="2" align="center">
             <span><img style="width:200px" src="${createLink(controller: 'image', action: 'showImageForThisOrThatTopicPicture2', params: [topicId: thisOrThatTopic.id])}"></span>
+            <span id="pic2Votes">${picture2Votes} votes</span>
         </td>
     </tr>
     <tr>
@@ -45,13 +47,13 @@
     </tr>
     <tr>
         <td colspan="2" align="center">
-            <img id="vote1" width="75" src="${resource(dir: 'images', file: 'vote_for_me.jpg')}" style="cursor:pointer"rel onclick="vote();" rel="${createLink(controller: 'thisOrThat', action: 'vote')}"/>
+            <img class="vote1" width="75" src="${resource(dir: 'images', file: 'vote_for_me.jpg')}" style="cursor:pointer" onclick="vote(pic1Votes);" rel="${createLink(controller: 'thisOrThat', action: 'vote', params: [id: thisOrThatTopic.id, pic: 'pic1'])}"/>
         </td>
         <td colspan="2">
 
         </td>
         <td colspan="2" align="center">
-            <img width="75" src="${resource(dir: 'images', file: 'vote_for_me.jpg')}" style="cursor:pointer" onclick="vote();"/>
+            <img class-="vote1" width="75" src="${resource(dir: 'images', file: 'vote_for_me.jpg')}" style="cursor:pointer" onclick="vote(pic2Votes);" rel="${createLink(controller: 'thisOrThat', action: 'vote', params: [id: thisOrThatTopic.id, pic: 'pic2'])}"/>
         </td>
     </tr>
     <div id="fb-root"></div>
@@ -61,18 +63,18 @@
             <fb:comments href="${ConfigurationHolder.config.grails.serverURL}/user/thisOrThat?topicId=${thisOrThatTopic.id.encodeAsURL()}" num_posts="8" width="500"></fb:comments>
         </div></td>
         <td colspan="2"></td>
-
     </tr>
 </table>
 
 <script type="text/javascript">
-    jQuery('#vote1').click(function() {
+    function vote(id) {
+        alert('hello');
         var link = jQuery(this).attr('rel');
-//        jQuery.ajax(url: link);
         jQuery.ajax({url: link, success: function(data) {
-            alert(data)
+            jQuery('#' + id).html(data+'VOTES');
+            alert(data);
         }});
-    });
+    }
 </script>
 </body>
 </html>
