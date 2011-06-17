@@ -12,11 +12,8 @@ class FacebookService {
     private static final String GRAPH_BASIC_URL = "https://graph.facebook.com/"
     private static final String USER_BASIC_CONNECTION = "https://graph.facebook.com/me/"
 
-//    FacebookUser getProfile(String accessToken, String userId = 'me') {
     FacebookUser getProfile(String accessToken, String facebookId = 'me') {
-//        log.debug("Getting facebook profile for user ${userId}")
         log.debug("Getting facebook profile for user ${facebookId}")
-//        String fbUrl = "${GRAPH_BASIC_URL + userId}?access_token=${accessToken}"
         String fbUrl = "${GRAPH_BASIC_URL + facebookId}?access_token=${accessToken}"
         URL url = new URL(fbUrl)
         String jsonResponse

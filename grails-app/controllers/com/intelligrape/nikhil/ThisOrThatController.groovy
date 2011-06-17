@@ -1,7 +1,5 @@
 package com.intelligrape.nikhil
-
 import com.intelligrape.nikhil.util.Constants
-import com.sun.corba.se.impl.orbutil.closure.Constant
 
 class ThisOrThatController {
 
@@ -30,5 +28,9 @@ class ThisOrThatController {
         User user = User.findById(userId)
         List<ThisOrThatTopic> thisOrThatTopicList = ThisOrThatTopic.findAllByUser(user)
         [currentUser: user, thisOrThatTopicList: thisOrThatTopicList]
+    }
+
+    def vote = {
+        render "hello"
     }
 }
