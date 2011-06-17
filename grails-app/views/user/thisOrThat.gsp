@@ -29,7 +29,7 @@
         <td colspan="2" align="center">
             <img width=200 src="${createLink(controller: 'image', action: 'showImageForThisOrThatTopicPicture1', params: [topicId: thisOrThatTopic.id])}">
         </td>
-        <td colspan="2" align="center"><img style="width:100px" src="${resource(dir: 'images', file: 'VS logo.jpg')}"/></td>
+        <td colspan="2" align="center"><img style="width:100px" src="${resource(dir: 'images', file: 'VSlogo.jpg')}"/></td>
         <td colspan="2" align="center">
             <span><img style="width:200px" src="${createLink(controller: 'image', action: 'showImageForThisOrThatTopicPicture2', params: [topicId: thisOrThatTopic.id])}"></span>
         </td>
